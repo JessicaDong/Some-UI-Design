@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+                <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/posttitle"
+                />
+<android.support.v4.view.ViewPager 
+    android:id="@+id/pager2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+   
+  <android.support.v4.view.PagerTabStrip
+        android:id="@+id/pager_title_strip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"   
+        android:textColor="#00aaef" />
+</android.support.v4.view.ViewPager>
+</LinearLayout>

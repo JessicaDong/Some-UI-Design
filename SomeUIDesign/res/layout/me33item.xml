@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        android:layout_width="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:orientation="vertical"
+        android:layout_height="wrap_content" 
+        android:id="@+id/MyListItem" 
+        >
+        <ImageView 
+                android:layout_height="wrap_content" 
+                android:layout_width="fill_parent" 
+                android:id="@+id/Itemview" 
+               >
+        </ImageView>
+
+        <Button
+            android:id="@+id/Me3delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除" />
+    
+</LinearLayout>

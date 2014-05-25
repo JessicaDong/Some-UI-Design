@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, KnowTheWorld!</string>
+    <string name="app_name">KnowTheWorld</string>
+      <string name="about_col">我</string>
+        <string name="about_friend">伙伴</string>
+          <string name="about_hot">热门</string>
+            <string name="about_cat">分类</string>
+
+</resources>

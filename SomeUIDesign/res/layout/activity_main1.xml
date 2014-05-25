@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     tools:context=".MainActivity1" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/bluebar4"
+        android:orientation="horizontal" >
+ <LinearLayout
+            android:id="@+id/spinneridcity"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+              android:onClick="showWindow5" >
+        <TextView
+                android:id="@+id/citytext"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:paddingLeft="0dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="北京"
+                android:textSize="20sp" 
+                android:clickable="true"
+                android:onClick="showWindow5"/>
+
+            <ImageView
+                android:id="@+id/citychoose"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                
+                android:src="@drawable/exhibition_arrow2" />
+              </LinearLayout>
+           <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginRight="0dp"
+                 android:layout_gravity="right"
+            android:orientation="horizontal" >
+ --> 
+ <!-- 加这一行实现控件左右分别对齐 -->
+ <TextView
+                android:id="@+id/text"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:paddingLeft="0dp"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+            <ImageButton
+                android:id="@+id/btnsearch"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="0dp"
+                android:onClick="searchtext"
+                android:src="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/btnadd"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                android:onClick="showWindow2"
+                android:src="@drawable/add" />
+
+            <ImageButton
+                android:id="@+id/btninfo"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+            
+                android:onClick="showWindow3"
+              
+                android:src="@drawable/personalinformation" />
+
+       
+    </LinearLayout>
+   <android.support.v4.view.ViewPager 
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <!--   PagerTitleStrip
+    <android.support.v4.view.PagerTitleStrip
+        android:id="@+id/pager_title_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        
+   
+        android:textColor="#000000" />
+ --> 
+  <android.support.v4.view.PagerTabStrip
+        android:id="@+id/pager_title_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        
+   
+        android:textColor="#00aaef" />
+</android.support.v4.view.ViewPager>
+</LinearLayout>

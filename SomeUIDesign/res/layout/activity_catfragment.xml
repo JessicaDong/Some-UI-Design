@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+     <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll1"
+            android:fillViewport="true"
+            android:layout_marginTop="0dp" >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" 
+                    android:orientation="horizontal">
+                    <ImageView 
+                        android:src="@drawable/cat4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                         android:onClick="catclick2"/>
+                     <ImageView 
+                        android:src="@drawable/cat5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                         android:onClick="catclick1"/>
+                    
+                </LinearLayout>
+            
+          <ImageView 
+              
+              android:id="@+id/imgview11"
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:src="@drawable/cat3"
+            android:adjustViewBounds="true"
+            
+          android:clickable="true" 
+         
+           >
+            
+            
+            </ImageView>  
+              
+</LinearLayout>
+           
+        </ScrollView>
+  
+</LinearLayout>

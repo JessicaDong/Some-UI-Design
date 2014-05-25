@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <!--  v2开始注释
+     <RelativeLayout  android:background="@drawable/nn3"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">
+	  
+        
+	   <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textColor="#000000"
+           android:gravity="center"
+           android:text="收藏"
+           android:onClick="tvclick1"
+                android:clickable="true"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+         <TextView
+           android:id="@+id/textView2"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textColor="#000000"
+           android:gravity="center"
+           android:text="伙伴"
+           android:onClick="tvclick2"
+                android:clickable="true"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+           <TextView
+           android:id="@+id/textView3"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textColor="#00aeef"
+           android:gravity="center"
+           android:text="热门"
+           android:onClick="tvclick3"
+                android:clickable="true"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+             <TextView
+           android:id="@+id/textView4"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textColor="#000000"
+           android:gravity="center"
+           android:text="分类"
+           android:onClick="tvclick4"
+                android:clickable="true"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+           
+
+        </LinearLayout>
+        
+      <ImageButton
+              android:id="@+id/btnsearch"
+              android:layout_width="40dp"
+              android:layout_height="28dp"
+              android:padding="0dp"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginRight="80dp"
+              android:onClick="searchtext"
+              android:src="@drawable/search" />
+     <ImageButton
+              android:id="@+id/btnadd"
+              android:layout_width="40dp"
+              android:layout_height="28dp"
+              android:padding="0dp"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginRight="40dp"
+            android:onClick="showWindow2"
+              android:src="@drawable/add" />
+     <ImageButton
+              android:id="@+id/btninfo"
+              android:layout_width="40dp"
+              android:layout_height="28dp"
+              android:padding="0dp"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginRight="0dp"
+            android:onClick="showWindow3"
+              android:src="@drawable/personalinformation" />
+     
+  v1开始注释
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp" >
+
+            <Button
+                android:id="@+id/btnhome5"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:onClick="tohome5"
+                android:text=""
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnfri5"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:alpha="0"
+                   android:onClick="tofri5"
+                android:text=""
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btncole5"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:onClick="tocole5"
+                android:text=""
+                android:textSize="12sp" />
+        </LinearLayout>
+        到这里是v1注释的
+   
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/ll1"
+         android:layout_marginLeft="26dp"
+         android:layout_marginTop="187dp"
+         android:onClick="hotbegindetail1"
+         android:alpha="0"
+         android:text="" />
+
+    </RelativeLayout>
+        到这里是v2注释的
+        -->
+      <RelativeLayout  android:background="@drawable/c02"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">
+
+          <Button
+              android:id="@+id/button1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:alpha="0"
+              android:onClick="hotclick1" />
+
+	  </RelativeLayout>   
+
+</LinearLayout>

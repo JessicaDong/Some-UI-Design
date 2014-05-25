@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.JessicaDong.knowtheworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+         android:theme="@android:style/Theme.NoTitleBar" >
+        <!--.SplashActivity1  -->
+        <activity
+           
+            android:name="MainActivity2"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="MainActivity1"></activity>
+        <activity android:name="Hot2"></activity>
+       
+        <!-- 
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+        
+       
+        
+        <activity
+            android:name="com.JessicaDong.knowtheworld.SplashActivity1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         -->
+        <activity
+            android:name=".GuideActivity1"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".TestWeiXinWhatsNewActivity" >
+        </activity>
+        <activity android:name="Release" >
+        </activity>
+        <activity android:name="Share" >
+        </activity>
+        <activity android:name="Cat" >
+        </activity>
+        <activity android:name="Hot" >
+        </activity>
+        <activity android:name="More" >
+        </activity>
+        <activity android:name="Sear" >
+        </activity>
+        <activity android:name="Collec" >
+        </activity>
+        <activity android:name="Comment" >
+        </activity>
+        <activity android:name="FileAccess" >
+        </activity>
+        <activity android:name="NewsXmlParser" >
+        </activity>
+        <activity android:name="SlideImageLayout" >
+        </activity>
+        <activity android:name="Searchtext1" >
+        </activity>
+        <activity android:name="Friendtotal" >
+        </activity>
+        <activity android:name="Colectotal" >
+        </activity>
+        <activity android:name="Myadapter" >
+        </activity>
+        <activity android:name="Friendadd" >
+        </activity>
+        <activity android:name="Friendlist" >
+        </activity>
+        <activity android:name="Friendmanagement" >
+        </activity>
+        <activity android:name="ListActivityImpl" >
+        </activity>
+        <activity android:name="Angela" >
+        </activity>
+        <activity android:name="Recntlyview" >
+        </activity>
+        <activity android:name="Feedback" >
+        </activity>
+        <activity android:name="Mycomment" >
+        </activity>
+        <activity android:name="Seetings" >
+        </activity>
+        <activity android:name="Myaccount" >
+        </activity>
+        <activity android:name="Recommend" >
+        </activity>
+        <activity android:name="Infomanagement" >
+        </activity>
+        <activity android:name="Renew" >
+        </activity>
+        <activity android:name="Services" >
+        </activity>
+        <activity android:name="About" >
+        </activity>
+        <activity android:name="Catdetail" >
+        </activity>
+        <activity android:name="ViewPager1" >
+        </activity>
+        <activity android:name="ViewPagerAdapter" >
+        </activity>
+        <activity android:name="ViewPager2" >
+        </activity>
+        <activity android:name="ViewPagerAdapter2" >
+        </activity>
+        <activity android:name="ViewAdapter3" >
+        </activity>
+        <activity android:name="CityList" >
+        </activity>
+        <activity android:name="CityModel" >
+        </activity>
+        <activity android:name="com.JessicaDong.knowtheworld.MyLetterListView" >
+        </activity>
+        <activity android:name="DBManager" >
+        </activity>
+        <activity android:name="FragmentAdapter" >
+        </activity>
+        <activity android:name="CatFragment" >
+        </activity>
+        <activity android:name="FriFregment" >
+        </activity>
+        <activity android:name="HotFregment" >
+        </activity>
+        <activity android:name="ColFragment" >
+        </activity>
+       
+        <activity android:name="Somecomment" >
+        </activity>
+        <activity android:name="OtherActivity" >
+        </activity>
+        <activity android:name="Me1" >
+        </activity>
+        <activity android:name="Me2" >
+        </activity>
+        <activity android:name="Me3" >
+        </activity>
+        <activity android:name="Me4" >
+        </activity>
+        <activity android:name="Me5" >
+        </activity>
+        <activity android:name="Me6" >
+        </activity>
+        <activity android:name="Me7" >
+        </activity>
+        <activity android:name="VerticalScrollTextActivity1"></activity>
+        <activity android:name="VerticalScrollTextView"></activity>
+        <activity android:name="Scentence1"></activity>
+        <activity android:name="Release2"></activity>
+        <activity android:name="Map1"></activity>
+        <activity android:name="GeoCoderDemo"></activity>
+        <activity android:name="ListViewAdapter2"></activity>
+        <activity android:name="Me22"></activity>
+        <activity android:name="Me55"></activity>
+        <activity android:name="Me44"></activity>
+        <activity android:name="Me444"></activity>
+        <activity android:name="Me44adapter"></activity>
+        <activity android:name="Me33"></activity>
+        <activity android:name="Means33"></activity>
+        <activity android:name="Me66"></activity>
+        <activity android:name="Me222"></activity>
+        <activity android:name="Me2222"></activity>
+        <activity android:name="Me333"></activity>
+        <activity android:name="Me3333"></activity>
+        <activity android:name="Me44444"></activity>
+        <activity android:name="Me444444"></activity>
+        <activity android:name="Me555"></activity>
+        <activity android:name="Me5555"></activity>
+        <activity android:name="Me666"></activity>
+        <activity android:name="Friendadd2"></activity>
+        <activity android:name="Friendgroup"></activity>
+    </application>
+<supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    
+</manifest>

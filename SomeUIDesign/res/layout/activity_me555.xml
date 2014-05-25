@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:background="@drawable/fav2" >
+        <ImageButton
+             android:id="@+id/back18"
+             android:layout_width="60dp"
+             android:layout_height="27dp"
+             android:layout_alignParentLeft="true"
+            
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="0dp"
+               android:layout_marginLeft="1dp"
+             android:onClick="backclick18"
+             android:padding="0dp"
+             android:alpha="0"
+             android:src="@drawable/newback" />
+
+        <ImageButton
+            android:id="@+id/listViewme2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/back18" 
+            android:alpha="0"
+            android:clickable="true"
+            android:onClick="showWindowme2"/>
+         
+        </RelativeLayout>
+</LinearLayout>

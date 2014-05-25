@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/detail1" >
+        
+           <ImageButton
+               android:id="@+id/back30"
+               android:layout_width="60dp"
+               android:layout_height="27dp"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="1dp"
+               android:layout_marginTop="0dp"
+               android:onClick="backclick5"
+               android:padding="0dp"
+               android:alpha="0"
+               android:src="@drawable/newback" />
+           
+       <!--    
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginBottom="0dp"
+           android:background="@null"
+        
+            android:layout_alignParentBottom="true"
+            
+            android:ems="10" />
+            -->  
+           <!-- 
+        	        <LinearLayout 
+		        android:id="@+id/linearlayout_images_slide"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+	     --> 
+	
+	       
+		       <android.support.v4.view.ViewPager
+			       android:id="@+id/image_slide_page"
+			       android:layout_width="fill_parent"
+			         android:layout_marginTop="130dp"
+			       android:layout_height="110dip"
+			       android:focusable="true" />
+		       
+		       
+	                <LinearLayout
+	                    android:id="@+id/layout_circle_images"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="15dp"
+	                    android:layout_marginTop="250dp"
+	                    android:layout_marginRight="60dp"
+	                    android:layout_marginLeft="60dp"
+	                    android:orientation="horizontal"
+	                    android:gravity="center_horizontal">
+	                    
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="30dp"
+	                    android:layout_alignParentBottom="true" >
+
+	                     <Button 
+	                         android:layout_width="0dip"
+	                         android:layout_height="wrap_content"
+	                         android:layout_weight="1"
+	                         android:textSize="10sp"
+	                         android:id="@+id/favoritebtn"
+	                        android:alpha="0"
+	                        android:onClick="favclick"
+	                         android:text="Favorite"
+	                         />
+	                       <Button 
+	                         android:layout_width="0dip"
+	                         android:layout_height="wrap_content"
+	                         android:layout_weight="1"
+	                         android:textSize="10sp"
+	                         android:id="@+id/sharebtn"
+	                           android:alpha="0"
+	                            android:onClick="shareclick"
+	                         android:text="Share"
+	                         />
+	                         <Button 
+	                         android:layout_width="0dip"
+	                         android:layout_height="wrap_content"
+	                         android:layout_weight="1"
+	                         android:textSize="10sp"
+	                         android:id="@+id/commentbtn"
+	                           android:alpha="0"
+	                            android:onClick="commentclick"
+	                         android:text="Comment"
+	                         />
+	                    
+	                </LinearLayout>
+
+	                <Button
+	                    android:id="@+id/button1"
+	                    android:layout_width="50dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_below="@+id/back30"
+	                    android:layout_marginTop="61dp"
+	                    android:alpha="0"
+	                    android:onClick="map1" />
+
+    </RelativeLayout>
+
+        
+</LinearLayout>

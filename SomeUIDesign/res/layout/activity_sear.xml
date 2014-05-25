@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/parentlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/search4" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/spinnerid"
+            android:layout_marginLeft="10dp"
+            android:text="使用当前位置"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox1"
+            android:layout_alignRight="@+id/checkBox1"
+            android:layout_below="@+id/checkBox1"
+            android:layout_marginTop="59dp" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="明日预告"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日精彩"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部内容"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_alignRight="@+id/radioGroup1"
+            android:layout_below="@+id/checkBox1"
+            android:layout_marginTop="29dp"
+            android:text="按日期筛选"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00AEED" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="190dp"
+            android:layout_height="23dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:ems="10"
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/checkBox1"
+            android:layout_alignRight="@+id/spinnerid"
+            android:layout_below="@+id/textView2"
+            android:background="@drawable/frameline_edittext"
+            android:ems="8"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="北京"
+            android:textSize="23sp"
+            android:textColor="#000000" 
+            android:clickable="true"
+            android:onClick="showcity1"/>
+
+        <LinearLayout
+            android:id="@+id/spinnerid"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="58dp"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:paddingLeft="30dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/arrowbut"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:src="@drawable/exhibition_arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="104dp"
+            android:text="当前位置 /城市"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00ADDE" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/editText1"
+            android:text="" 
+            android:onClick="tohome4"
+            android:alpha="0"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
